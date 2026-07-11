@@ -12,12 +12,12 @@ The agent's job: research prompt marketplaces (starting with PromptBase) and pro
 
 **Hard boundary (from the owner's own rules):** the agent gathers and organizes market data only. It must NEVER decide what Ali should sell, pick his niche, or make business recommendations. Ali reads the reports, does the analysis, and makes every business decision himself. The agent is a scout, not a general.
 
-**Current focus:** finance prompts (e.g. stock analysis). Summary prompts are under consideration — the scout collects data on both; Ali decides.
+**Current phase: LAUNCH — research is closed.** The master file (`reports/2026-07-11-promptbase-master-file.md`) is the single source of truth and supersedes the earlier baseline and platform-rules reports. Niche: finance prompts under "The Honest Analyst" standard. The only open task is the launch sequence in the master file's section 11. The next new data collected is sales data — do not start new research rounds before launch; that is the "meta-work instead of work" pattern the master file warns about.
 
 ## Repository Structure
 
-- `agent/scout.md` — the Prompt Scout's instructions: its job, boundaries, and report format.
-- `reports/` — dated research reports produced by the scout (`YYYY-MM-DD-<category>.md`).
+- `agent/scout.md` — the Prompt Scout's instructions: its job, boundaries, and report format. On standby until after launch; its next use is post-launch category monitoring and sales-data rounds.
+- `reports/` — dated research reports (`YYYY-MM-DD-<category>.md`). The master file is the current single source of truth.
 
 ## About the Owner
 
