@@ -20,6 +20,13 @@ Everything we know, in one place. Read section 1 before creating the account. Re
 - ⚠️ **Step-zero check:** payouts run through Stripe (a "Stripe Express" account) and Zoneless. Stripe does not support every country. During signup, check that your country appears in the list. If it does not: PromptBase offers a notification list, and a legal workaround is registering the seller account through a trusted family member in a supported country. Solve this BEFORE building anything else on the account.
 - Stripe may ask for an ID document to finish setup — normal, do it once.
 
+**Step-zero addendum — UAE / Mashreq research (added 2026-07-11):**
+- The UAE is on Stripe's official supported-country list with no restrictions ([stripe.com/global](https://stripe.com/global)).
+- Mashreq bank is on Stripe's supported UAE banks list ([source](https://support.stripe.com/questions/supported-banks-in-the-uae)).
+- Payouts go to a bank ACCOUNT, not a debit card. Connect the Mashreq account itself. UAE payouts arrive in AED, T+5 business days, minimum 20 AED ([source](https://support.stripe.com/questions/payouts-for-uae-accounts)).
+- Safety net: PromptBase also pays via Zoneless (USDC) — daily at 12:00 UTC, no minimum balance ([source](https://promptbase.com/knowledge-base/payouts)). If Stripe onboarding blocks the UAE, switch to Zoneless and keep moving; no launch delay needed.
+- Not confirmable from outside: whether PromptBase's own signup dropdown lists "United Arab Emirates." The 2-minute onboarding check remains the definitive test.
+
 **Payout rules**
 - Each sale: 80% enters "pending balance" → moves to "available" after 72 hours.
 - New sellers are paid monthly (1st of the month). After 50 sales you can switch to weekly (Mondays).
