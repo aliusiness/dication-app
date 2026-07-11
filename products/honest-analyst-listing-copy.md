@@ -1,8 +1,7 @@
 # Listing Copy — The Honest Analyst (stock analysis product)
 
-Status: DRAFT stored 2026-07-11. Product it belongs to: to be confirmed by Ali
-(likely Product #1 "Quarterly Earnings Decoder" or Product #2 "Fundamental
-Report Generator" from the master file pipeline).
+Status: DRAFT stored 2026-07-11. Belongs to: "The Honest Analyst" main prompt
+(`honest-analyst-main-prompt.md`) — confirmed by section-for-section match.
 
 ⚠️ Pre-submission check: the line "Tested on ChatGPT & Claude — July 2026" is a
 claim. It becomes true only after Ali runs the real test (master file section 11,
