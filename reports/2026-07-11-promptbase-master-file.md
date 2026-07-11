@@ -124,7 +124,7 @@ Core: people buy certainty. Three certainties needed: the product, the seller, t
 - **Platform risk is real:** Trustpilot reports of sudden bans and payout issues exist; Etsy banned prompt bundles entirely; PromptBase changed payout terms before. Mitigation: email list + Gumroad ladder + never build the whole business on one platform's mercy.
 - **Burial risk (the 19-views lesson):** keyword titles, delta previews, review velocity, one category focus.
 - **Honesty/liability:** educational framing everywhere; no buy/sell advice; no predictions. This is both ethics and one-star insurance.
-- **The founder (the only unhedged risk):** patterns on file — quitting at boredom, shiny objects at shipping time, meta-work instead of work. Countermeasure: day-90 exit rule (decisions only with sales data), one open launch task at a time, meta-questions get 3 lines max.
+- **The founder (the biggest variable):** Ali knows his own habits — interest fades when things get boring, new ideas appear right at shipping time, and preparation can quietly replace the real task. Friendly countermeasures: make decisions only with sales data (day-90 rule), keep one launch task open at a time, and keep planning discussions short so building stays the main event.
 
 ---
 

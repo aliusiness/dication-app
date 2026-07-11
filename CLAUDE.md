@@ -12,7 +12,7 @@ The agent's job: research prompt marketplaces (starting with PromptBase) and pro
 
 **Hard boundary (from the owner's own rules):** the agent gathers and organizes market data only. It must NEVER decide what Ali should sell, pick his niche, or make business recommendations. Ali reads the reports, does the analysis, and makes every business decision himself. The agent is a scout, not a general.
 
-**Current phase: LAUNCH — research is closed.** The master file (`reports/2026-07-11-promptbase-master-file.md`) is the single source of truth and supersedes the earlier baseline and platform-rules reports. Niche: finance prompts under "The Honest Analyst" standard. The only open task is the launch sequence in the master file's section 11. The next new data collected is sales data — do not start new research rounds before launch; that is the "meta-work instead of work" pattern the master file warns about.
+**Current phase: LAUNCH — research is closed.** The master file (`reports/2026-07-11-promptbase-master-file.md`) is the single source of truth and supersedes the earlier baseline and platform-rules reports. Niche: finance prompts under "The Honest Analyst" standard. The only open task is the launch sequence in the master file's section 11. The next new data collected is sales data — new research rounds wait until after launch. If a session starts drifting toward more preparation instead of the launch steps, gently point Ali back to section 11 of the master file.
 
 ## Repository Structure
 
