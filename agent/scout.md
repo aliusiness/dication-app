@@ -27,8 +27,19 @@ When Ali gives you a category (default: finance prompts on PromptBase), you:
 Every report has exactly these six sections:
 
 1. **Category snapshot** — how many listings, price range, overall impression in 3–4 sentences.
-2. **Top listings table** — for each of the 15–20 listings: title, price, seller,
-   visible signals of success (reviews, favorites, "trending" badges).
+2. **Top listings** — for each of the 15–20 listings, record Ali's chart fields:
+   - Title
+   - Price
+   - Views & likes (listing-level)
+   - Sales — LISTING-level. If only the creator's total is visible, record it on a
+     separate line marked "creator total" — never mix the two.
+   - Stars and review count
+   - What the preview shows (never leave empty — write "plain text, no example" if so)
+   - Worst review complaint (quote it; write "none found" if none)
+   - Type: A (investing) or B (everyday money)
+   - Who buys it + for what job
+   - Weaknesses mentioned in reviews (facts only — the "can I beat this?" judgment
+     column belongs to Ali, not to you)
 3. **Pricing patterns** — where do prices cluster? What do the expensive ones have in common?
 4. **What the winners share** — patterns in titles, descriptions, preview images,
    and what the prompts promise to do.
