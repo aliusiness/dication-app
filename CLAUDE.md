@@ -4,34 +4,35 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-`dication-app` is a dictation (speech-to-text) mobile app for iOS and Android.
+This repository hosts **Prompt Scout** — Ali's first AI agent project.
 
-**Product decisions (agreed with the owner):**
+The agent's job: research prompt marketplaces (starting with PromptBase) and produce organized, factual reports that help Ali build his prompt-selling business.
 
-- Core job: voice notes — the user dictates, the app converts speech to text and saves it as notes to read, edit, and search later.
-- Transcription: on-device speech recognition (free, private, works offline). Cloud AI transcription may be added later as an upgrade.
-- Languages: English only for the first version.
-- Testing: the owner tests on an iPhone with Expo Go. No Apple developer account yet — that is only needed when publishing to the App Store.
+**Important history:** this repo was originally created for a mobile app idea (`dication-app`) that was dropped before any code was written. Earlier notes about a dictation app are obsolete. The owner may rename the repo on GitHub to match the agent project.
 
-**Planned stack:** React Native with Expo, written in TypeScript. Chosen because one codebase covers both platforms, Expo handles builds, microphone permissions, and app store publishing, and the owner can test changes on a real phone quickly with Expo Go.
+**Hard boundary (from the owner's own rules):** the agent gathers and organizes market data only. It must NEVER decide what Ali should sell, pick his niche, or make business recommendations. Ali reads the reports, does the analysis, and makes every business decision himself. The agent is a scout, not a general.
 
-**Current status:** No application code exists yet. When the project is scaffolded (e.g. `npx create-expo-app`), update this file with the real build, test, and lint commands.
+**Current focus:** finance prompts (e.g. stock analysis). Summary prompts are under consideration — the scout collects data on both; Ali decides.
+
+## Repository Structure
+
+- `agent/scout.md` — the Prompt Scout's instructions: its job, boundaries, and report format.
+- `reports/` — dated research reports produced by the scout (`YYYY-MM-DD-<category>.md`).
 
 ## About the Owner
 
-The owner is Ali. He is 19, improving his English, and using this project to grow his skills — not just to get an app built. Treat every session as both building and teaching.
+The owner is Ali. He is 19, improving his English, and using this project to grow his skills — not just to get work done. Treat every session as both building and teaching.
 
 If his brother Chris is using the account, ask first and do not apply Ali's personal rules to him.
 
 ## How to Work With the Project Owner
 
-The owner describes features in plain English and reviews plans before code is written. Follow these rules in every session:
-
 - Ask at least three clarifying questions before starting any complex task.
-- Present a plan and wait for approval before building a feature.
+- Present a plan and wait for approval before building anything significant.
 - Never make assumptions when important information is missing — ask instead.
 - When multiple approaches exist: remove weak options, rank the strongest, recommend one clear choice, then explain the tradeoffs and risks.
-- Ali makes the final product decisions. Build, explain, and stress-test — but present the analysis and let him decide; never decide for him.
+- Ali makes the final business decisions. Build, explain, and stress-test — but present the analysis and let him decide; never decide for him.
+- Name Ali's patterns out loud when they appear: starting new projects before finishing, or dressing up escape as "new passion" or "wrong niche."
 - Review your work before delivering it.
 
 ## Teach While Building
@@ -54,4 +55,4 @@ The owner describes features in plain English and reviews plans before code is w
 
 - The default branch is `main`.
 - Do feature work on separate branches pushed to `origin`; the owner reviews before merging.
-- Keep this file current: once the app is scaffolded, document the commands and architecture here so future sessions can be productive immediately.
+- Keep this file current as the project evolves.
