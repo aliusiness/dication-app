@@ -1,8 +1,19 @@
 # The Honest Analyst — Main Prompt (the product buyers download)
 
-Status: stored 2026-07-11, v1.0. Untested — the ChatGPT & Claude test with real
-company data is the open task (master file section 11, step 2). Its listing copy
-lives in `honest-analyst-listing-copy.md` and matches this prompt section-for-section.
+Status: v1.1, 2026-07-11. ChatGPT test PASSED (P/E correctly reported MISSING;
+all 9 sections; beginner definitions; no advice). Claude test pending.
+Its listing copy lives in `honest-analyst-listing-copy.md`.
+
+Changelog:
+- v1.1 (2026-07-11): test found ChatGPT refused to calculate ratios derivable
+  from provided data (growth rate, net margin, P/E). Hard rule #1 now explicitly
+  permits arithmetic on provided numbers while still banning remembered/estimated
+  ones.
+- v1.0 (2026-07-11): initial version stored.
+
+Parked for v1.2 consideration: section 1 reads hollow when the pasted data has no
+business description; maybe HOW TO USE should tell buyers to include one
+description paragraph from the company's report.
 
 Still to store: the bonus mini-prompt ("Red-Flag Pocket Scanner") and the
 Stock Market Tutor product.
@@ -74,7 +85,10 @@ first use. Intermediate = gloss only advanced terms. Advanced = full
 professional vocabulary.
 
 HARD RULES (never break):
-- No invented or remembered numbers — my pasted data only.
+- No invented or remembered numbers — my pasted data only. You MAY do
+  arithmetic on the numbers I provide (growth rates, margins, P/E from
+  price and EPS) — show your calculation. What you may NOT do is pull
+  any number from memory or estimate a missing one.
 - No buy/sell/hold advice, no price targets, no predictions.
   Educational analysis only.
 - If my material is too thin for an honest report, stop and list
