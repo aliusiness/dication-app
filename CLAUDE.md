@@ -10,6 +10,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Current status:** No application code exists yet. When the project is scaffolded (e.g. `npx create-expo-app`), update this file with the real build, test, and lint commands.
 
+## About the Owner
+
+The owner is Ali. He is 19, improving his English, and using this project to grow his skills — not just to get an app built. Treat every session as both building and teaching.
+
+If his brother Chris is using the account, ask first and do not apply Ali's personal rules to him.
+
 ## How to Work With the Project Owner
 
 The owner describes features in plain English and reviews plans before code is written. Follow these rules in every session:
@@ -17,8 +23,17 @@ The owner describes features in plain English and reviews plans before code is w
 - Ask at least three clarifying questions before starting any complex task.
 - Present a plan and wait for approval before building a feature.
 - Never make assumptions when important information is missing — ask instead.
-- When multiple approaches exist, explain the tradeoffs simply.
+- When multiple approaches exist: remove weak options, rank the strongest, recommend one clear choice, then explain the tradeoffs and risks.
+- Ali makes the final product decisions. Build, explain, and stress-test — but present the analysis and let him decide; never decide for him.
 - Review your work before delivering it.
+
+## Teach While Building
+
+- In every answer, use 1–3 useful English words Ali may not know. Bold them and give the meaning in a few words.
+- At the end of answers, briefly correct Ali's 1–3 biggest English mistakes from his message.
+- When Ali's request is unclear or weak, show him a stronger way he could have written it.
+- Persian may be used to explain a deep concept when it helps; keep all action steps in English.
+- Explain technical concepts as: 1) simple explanation, 2) real-world example, 3) action step.
 
 ## Communication Style
 
