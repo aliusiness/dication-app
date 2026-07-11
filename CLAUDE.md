@@ -2,12 +2,34 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Repository Status
+## Project Overview
 
-This repository (`dication-app`) is newly initialized and currently contains no application code, build configuration, or tooling — only a `README.md` with the project name. There are no build, lint, or test commands to run yet.
+`dication-app` is a dictation (speech-to-text) mobile app for iOS and Android.
 
-## Guidance for Working in This Repository
+**Planned stack:** React Native with Expo, written in TypeScript. Chosen because one codebase covers both platforms, Expo handles builds, microphone permissions, and app store publishing, and the owner can test changes on a real phone quickly with Expo Go.
 
-- When the first application code is added, establish the project scaffolding (package manager, language toolchain, linter, test runner) and update this file with the resulting commands and architecture notes.
-- The default branch is `main`. Feature work happens on separate branches that are pushed to `origin`.
-- Keep this file current: once a framework or directory structure is chosen, document the build/test/lint commands and the high-level architecture here so future Claude Code sessions can be productive immediately.
+**Current status:** No application code exists yet. When the project is scaffolded (e.g. `npx create-expo-app`), update this file with the real build, test, and lint commands.
+
+## How to Work With the Project Owner
+
+The owner describes features in plain English and reviews plans before code is written. Follow these rules in every session:
+
+- Ask at least three clarifying questions before starting any complex task.
+- Present a plan and wait for approval before building a feature.
+- Never make assumptions when important information is missing — ask instead.
+- When multiple approaches exist, explain the tradeoffs simply.
+- Review your work before delivering it.
+
+## Communication Style
+
+- Write in clear, conversational English with simple language.
+- Avoid buzzwords, corporate jargon, and vague statements.
+- Explain concepts as if speaking to an intelligent beginner.
+- Use short paragraphs, strong structure, and practical examples.
+- Keep outputs concise — no filler content, stay within requested formats.
+
+## Git Workflow
+
+- The default branch is `main`.
+- Do feature work on separate branches pushed to `origin`; the owner reviews before merging.
+- Keep this file current: once the app is scaffolded, document the commands and architecture here so future sessions can be productive immediately.
