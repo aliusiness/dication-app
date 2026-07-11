@@ -6,6 +6,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 `dication-app` is a dictation (speech-to-text) mobile app for iOS and Android.
 
+**Product decisions (agreed with the owner):**
+
+- Core job: voice notes — the user dictates, the app converts speech to text and saves it as notes to read, edit, and search later.
+- Transcription: on-device speech recognition (free, private, works offline). Cloud AI transcription may be added later as an upgrade.
+- Languages: English only for the first version.
+- Testing: the owner tests on an iPhone with Expo Go. No Apple developer account yet — that is only needed when publishing to the App Store.
+
 **Planned stack:** React Native with Expo, written in TypeScript. Chosen because one codebase covers both platforms, Expo handles builds, microphone permissions, and app store publishing, and the owner can test changes on a real phone quickly with Expo Go.
 
 **Current status:** No application code exists yet. When the project is scaffolded (e.g. `npx create-expo-app`), update this file with the real build, test, and lint commands.
