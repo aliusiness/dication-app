@@ -8,6 +8,12 @@ MISSING, which is the safe direction for this brand. Claude test pending.
 Its listing copy lives in `honest-analyst-listing-copy.md`.
 
 Changelog:
+- v1.3 (2026-07-12): Claude test of the final version PASSED above spec —
+  business description integrated and corroborated against the financials,
+  TTM P/E derived with shown math, earnings-quality flag fired, bonus red flag
+  (outsourced manufacturing) found unprompted. Example output saved to
+  `honest-analyst-example-output-nvda.md`. Product FROZEN; remaining launch
+  items are the ChatGPT screenshot run, the seller account, and submission.
 - v1.3 (2026-07-11): LAUNCH VERSION — FROZEN. Claude test of v1.2 PASSED above
   spec (P/E 32.3x with shown math; earnings-quality flag caught; bonus catch of
   profit-vs-cash gap; internal consistency check). Both tests showed section 1
