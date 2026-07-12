@@ -10,6 +10,12 @@
 ## 0. How to use this file
 Everything we know, in one place. Read section 1 before creating the account. Read sections 6–7 before submitting any listing. Read section 9 once a week. Research is now CLOSED — the next new data we collect is sales data.
 
+> **Amendment (2026-07-12, by Ali):** research temporarily reopened for
+> PROMPT-CRAFT ONLY (how to build better prompts), because PromptBase is
+> unreachable on his current connection. Conditions: the v1.3 product stays
+> frozen; findings feed v2 and products #2/#3 only; the moment a working
+> connection returns, section 11 (launch) is again the only open task.
+
 ---
 
 ## 1. Platform mechanics (the rules of the game)
