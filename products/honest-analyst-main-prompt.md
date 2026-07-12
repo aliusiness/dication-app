@@ -8,6 +8,12 @@ MISSING, which is the safe direction for this brand. Claude test pending.
 Its listing copy lives in `honest-analyst-listing-copy.md`.
 
 Changelog:
+- v1.3 (2026-07-12): ChatGPT test of the final version PASSED — business
+  description integrated, TTM EPS summed and P/E derived with shown math
+  (32.3x), earnings-quality red flag #1 fired on the $4.8B gap, MISSING used
+  only where truly underivable (forward P/E). BOTH ENGINES NOW PASS THE LAUNCH
+  VERSION: "Tested on ChatGPT & Claude — July 2026" is fully true. Remaining
+  launch items: screenshots, seller account, submission.
 - v1.3 (2026-07-12): Claude test of the final version PASSED above spec —
   business description integrated and corroborated against the financials,
   TTM P/E derived with shown math, earnings-quality flag fired, bonus red flag
