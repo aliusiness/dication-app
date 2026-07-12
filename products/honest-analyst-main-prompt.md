@@ -8,6 +8,13 @@ MISSING, which is the safe direction for this brand. Claude test pending.
 Its listing copy lives in `honest-analyst-listing-copy.md`.
 
 Changelog:
+- v1.3 (2026-07-11): LAUNCH VERSION — FROZEN. Claude test of v1.2 PASSED above
+  spec (P/E 32.3x with shown math; earnings-quality flag caught; bonus catch of
+  profit-vs-cash gap; internal consistency check). Both tests showed section 1
+  opens blind without a business description, so SOURCE MATERIAL gains a
+  BUSINESS DESCRIPTION field. No further changes before launch; new ideas go
+  to a v2 list after sales data exists. ChatGPT should re-run this final
+  version for its screenshot.
 - v1.2 (2026-07-11): second-opinion review (Claude critique of the ChatGPT run)
   found two gaps: no earnings-quality flag when net income exceeds operating
   income, and P/E left MISSING despite four consecutive quarters of EPS being
@@ -45,6 +52,12 @@ SOURCE MATERIAL (pasted below — any combination of: the company's
 latest annual/quarterly report sections, the financials page from my
 broker or a finance site, recent press releases, or key numbers I
 collected myself):
+
+BUSINESS DESCRIPTION (1–2 sentences copied from the company's own
+report or website — so the analysis knows what the business does):
+[WHAT_THE_COMPANY_DOES]
+
+FINANCIAL DATA:
 [PASTE_COMPANY_DATA_HERE]
 
 YOUR TASK — produce a fundamental analysis report with exactly these

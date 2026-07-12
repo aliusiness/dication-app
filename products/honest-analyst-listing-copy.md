@@ -37,7 +37,8 @@ Beginner mode explains every term in plain English. Advanced mode
 reads like an institutional research note.
 
 HOW TO USE (60 seconds)
-1. Fill 4 quick variables
+1. Fill 5 quick fields (company, ticker, your level, your question,
+   and 2 sentences on what the company does — copied from its website)
 2. Paste the company's financials (free on any investor-relations or
    finance page)
 3. Read your report — then make YOUR decision, better informed
