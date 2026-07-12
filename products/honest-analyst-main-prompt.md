@@ -1,7 +1,10 @@
 # The Honest Analyst — Main Prompt (the product buyers download)
 
-Status: v1.1, 2026-07-11. ChatGPT test PASSED (P/E correctly reported MISSING;
-all 9 sections; beginner definitions; no advice). Claude test pending.
+Status: v1.1, 2026-07-11. ChatGPT test PASSED twice: v1.0 run (refused to invent
+P/E) and v1.1 run (calculated growth rates, margins, and net cash with shown math;
+honestly downgraded its own confidence to Medium). Known acceptable behavior: still
+conservative on trailing P/E even when summable from quarterly EPS — errs toward
+MISSING, which is the safe direction for this brand. Claude test pending.
 Its listing copy lives in `honest-analyst-listing-copy.md`.
 
 Changelog:
