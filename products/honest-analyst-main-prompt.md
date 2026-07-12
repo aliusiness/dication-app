@@ -8,6 +8,11 @@ MISSING, which is the safe direction for this brand. Claude test pending.
 Its listing copy lives in `honest-analyst-listing-copy.md`.
 
 Changelog:
+- v1.2 (2026-07-11): second-opinion review (Claude critique of the ChatGPT run)
+  found two gaps: no earnings-quality flag when net income exceeds operating
+  income, and P/E left MISSING despite four consecutive quarters of EPS being
+  summable. Added TTM-EPS/P/E derivation rule to section 2 and an earnings-quality
+  check to section 4. This is the launch version; screenshots must use v1.2.
 - v1.1 (2026-07-11): test found ChatGPT refused to calculate ratios derivable
   from provided data (growth rate, net margin, P/E). Hard rule #1 now explicitly
   permits arithmetic on provided numbers while still banning remembered/estimated
@@ -54,7 +59,9 @@ sections:
    Valuation numbers if present (P/E, market cap). Three columns:
    "Metric" | "Value from my data" | "So what?" (one plain-English
    line). RULE: a number not present in my material = "MISSING — not
-   in provided data." Never fill gaps from memory.
+   in provided data." Never fill gaps from memory. If four consecutive
+   quarters of EPS are present, sum them as trailing-twelve-month EPS
+   and derive the P/E from the provided price — show the math.
 
 3. 🏰 MOAT CHECK — from the material only: what protects this business
    from competitors (brand, network, switching costs, cost advantage)?
@@ -62,7 +69,10 @@ sections:
 
 4. 🚩 RED FLAGS — specific concerns, each traced to an exact number or
    sentence from my data (falling margins, rising debt, shrinking
-   cash, customer concentration, vague language).
+   cash, customer concentration, vague language). ALWAYS check earnings
+   quality: if net income is close to or above operating income, flag
+   it and explain that non-core gains are boosting the profit — the
+   reader must know how much profit the core business really made.
 
 5. 🟢 STRENGTHS — same standard: specific and traceable.
 
