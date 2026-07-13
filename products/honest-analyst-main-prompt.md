@@ -42,6 +42,12 @@ Parked for v1.2 consideration: section 1 reads hollow when the pasted data has n
 business description; maybe HOW TO USE should tell buyers to include one
 description paragraph from the company's report.
 
+Parked for post-launch (from Claude's review of product #2, same issue here):
+the earnings-quality rule says "explain that non-core gains are boosting the
+profit" — that asserts a cause the data can't fully prove (could be a tax
+benefit, not a gain). Soften to: flag the anomaly, show the gap, list possible
+causes, do NOT assert which. Do NOT apply before launch — this prompt is frozen.
+
 Still to store: the bonus mini-prompt ("Red-Flag Pocket Scanner") and the
 Stock Market Tutor product.
 

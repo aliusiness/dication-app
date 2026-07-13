@@ -1,13 +1,25 @@
 # The Earnings Report Decoder — Product #2 (v1.0 DRAFT)
 
-Status: v1.0, 2026-07-12. ChatGPT test PASSED first try on real NVDA Q1 FY2027
-data: YoY growth calculated with shown math; Guidance correctly MISSING; the
-"no management commentary" honesty trap passed (it did NOT invent quotes);
-earnings-quality flag fired ($58.3B net income > $53.5B operating income);
-beginner definitions present. Claude test pending.
-Minor watch-item: the section-5 takeaway was a bit circular (said "watch for the
-guidance that's missing" instead of a substantive business point). Check whether
-Claude does the same; if both do, tighten section 5 in v1.1. Not a blocker.
+Status: v1.0, 2026-07-12. VALIDATED on BOTH engines with real NVDA Q1 FY2027
+data. ChatGPT + Claude: YoY growth calculated with shown math; Guidance correctly
+MISSING; the "no management commentary" honesty trap passed (neither invented
+quotes); earnings-quality flag fired ($58.3B net income > $53.5B operating
+income); beginner definitions present. Claude also wrote a strong substantive
+takeaway (ChatGPT's was weaker/circular — model variance, not a prompt flaw).
+
+v1.1 POST-LAUNCH FIXES (from Claude's instruction-review — do NOT apply before
+launch; these are polish, and the seller account matters more):
+1. Earnings-quality line asserts a cause ("non-core gains ARE lifting profit")
+   the data can't fully prove — it could be a tax benefit, not a gain. Soften to:
+   flag the anomaly, show the gap in $ and % of net income, LIST possible causes
+   (investment gain, tax benefit, settlement, asset sale, paste error), do NOT
+   assert which, state the release doesn't identify the cause. (Same fix applies
+   to product #1's earnings-quality rule.)
+2. Stop-condition "too thin" is undefined. Make concrete: proceed only if the
+   paste has revenue + at least one profit line + a comparison period; else STOP.
+3. Section 5 contradicts itself ("one sentence I complete myself" vs "fill both
+   blanks"). Reword so the AI fills the factual blanks and leaves the final
+   judgment to the buyer.
 Brand: same "Honest Analyst" DNA as product #1 (no invented numbers,
 educational only). Distinct from #1: works on ONE quarterly earnings release
 for a fast "what just happened" read, not a full fundamental analysis.
