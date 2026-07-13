@@ -23,7 +23,8 @@ The entire tracked contents of the repo today:
 ├── CLAUDE.md    # This guidance file
 ├── README.md    # One-line project title, no other content yet
 └── prompts/     # Portable AI prompts (not app code)
-    ├── coach-hormozi-williamson.md   # Ready-to-paste goal-coach system prompt
+    ├── coach-system-prompt.md        # Canonical coach prompt for Projects / Custom GPTs (use this)
+    ├── coach-hormozi-williamson.md   # Earlier ready-to-paste goal-coach system prompt
     └── coach-agent-spec.md           # The same coach as a structured 7-part agent spec
 ```
 
