@@ -54,3 +54,29 @@ live numbers (not reachable now). Ali decides the niche; this is data only.
 Sources: promptstodollars.com top-20 bestsellers; softhubtools.com
 PromptBase Review 2026; hubpy.io PromptBase Guide 2026; promptbase.com/sell
 and /marketplace.
+
+## Addendum — broad research beyond PromptBase (how people use AI overall)
+
+Washington Post-cited breakdown of generative-AI uses: creative writing /
+role-play 21%, homework help 18%, search 17%, work/business tasks 15%,
+coding 7%, image generation 6%, health advice 5%, jailbreaks 4%.
+
+ChatGPT's most common tasks: research, content/writing (incl. summarizing),
+coding (single most common task = debugging, ~6% of all chats),
+business/productivity. Notably: "teams in finance, marketing and operations
+use it to summarize findings and turn raw numbers into actionable insights."
+
+KEY DISTINCTION (the real lesson): summarization IS a very common USE — people
+do it constantly. But common ≠ sellable. It's common precisely because it's
+easy to do yourself for free, which is why standalone summary prompts have low
+willingness-to-pay. What sells = common-NEED but HARD-to-do-well
+(consultant-replacement, specialized styles, structured finance analysis).
+
+Finance fits the sellable side: millions ask AI about money (master file §3),
+AND doing it well is hard (needs structure, discipline, no invented numbers) —
+so "turn raw financial numbers into honest insight" is both in-demand and
+defensible. That is exactly what the Honest Analyst already does.
+
+Sources (broad): aimultiple.com ChatGPT use cases; firstpagesage.com ChatGPT
+usage statistics July 2026; masterofcode.com generative-AI statistics 2026;
+getguru.com AI prompt types.
