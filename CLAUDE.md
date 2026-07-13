@@ -21,10 +21,12 @@ The entire tracked contents of the repo today:
 ```
 .
 ├── CLAUDE.md    # This guidance file
-└── README.md    # One-line project title, no other content yet
+├── README.md    # One-line project title, no other content yet
+└── prompts/     # Portable AI prompts (not app code)
+    └── coach-hormozi-williamson.md   # A goal-coach persona prompt for the owner
 ```
 
-There is no `src/`, no `app/`, no configuration, and no dependencies. When you read a request that assumes running code, check the file tree first and correct the assumption if needed.
+There is no `src/`, no `app/`, no configuration, and no dependencies. When you read a request that assumes running code, check the file tree first and correct the assumption if needed. The `prompts/` folder holds standalone AI prompts the owner uses elsewhere; it is not part of the dictation app's runtime.
 
 ## How to Work With the Project Owner
 
