@@ -90,6 +90,16 @@ email list (email list by day 60 regardless) → Day 90: written continue/exit
 decision using sales data. THE key market finding: trust converts, traffic doesn't
 (12.5% vs 0.6% conversion in his field data) — optimize for first 5–10 reviews.
 
+## PRODUCT #2 IN PROGRESS (2026-07-12)
+
+- Ali chose to stay on the finance shelf (declined a legal-summarizer pivot —
+  that idea is parked in products/v2-ideas.md, to resurface AFTER first launch).
+- Product #2 = The Earnings Report Decoder (products/earnings-decoder-prompt.md),
+  a finance earnings-summary tool, v1.0 DRAFT, UNTESTED. Next step: test on
+  ChatGPT + Claude with a real earnings release, then write its listing copy.
+- Launch order is unchanged: finance product #1 (Honest Analyst) launches FIRST
+  the moment Ali's connection returns; #2 does not jump the queue.
+
 ## ALI STILL OWES (nag gently)
 
 1. The "Red-Flag Pocket Scanner" bonus mini-prompt text → to be stored in repo.
