@@ -25,7 +25,8 @@ The entire tracked contents of the repo today:
 └── prompts/     # Portable AI prompts (not app code)
     ├── coach-system-prompt.md        # Canonical coach prompt for Projects / Custom GPTs (use this)
     ├── coach-hormozi-williamson.md   # Earlier ready-to-paste goal-coach system prompt
-    └── coach-agent-spec.md           # The same coach as a structured 7-part agent spec
+    ├── coach-agent-spec.md           # The same coach as a structured 7-part agent spec
+    └── about-ali.md                  # Owner's personal context + working rules (paste into any chat)
 ```
 
 There is no `src/`, no `app/`, no configuration, and no dependencies. When you read a request that assumes running code, check the file tree first and correct the assumption if needed. The `prompts/` folder holds standalone AI prompts the owner uses elsewhere; it is not part of the dictation app's runtime.
