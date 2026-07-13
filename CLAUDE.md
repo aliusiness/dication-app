@@ -23,7 +23,8 @@ The entire tracked contents of the repo today:
 ├── CLAUDE.md    # This guidance file
 ├── README.md    # One-line project title, no other content yet
 └── prompts/     # Portable AI prompts (not app code)
-    └── coach-hormozi-williamson.md   # A goal-coach persona prompt for the owner
+    ├── coach-hormozi-williamson.md   # Ready-to-paste goal-coach system prompt
+    └── coach-agent-spec.md           # The same coach as a structured 7-part agent spec
 ```
 
 There is no `src/`, no `app/`, no configuration, and no dependencies. When you read a request that assumes running code, check the file tree first and correct the assumption if needed. The `prompts/` folder holds standalone AI prompts the owner uses elsewhere; it is not part of the dictation app's runtime.
