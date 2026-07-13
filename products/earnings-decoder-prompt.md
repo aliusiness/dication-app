@@ -1,7 +1,13 @@
 # The Earnings Report Decoder — Product #2 (v1.0 DRAFT)
 
-Status: DRAFT, built 2026-07-12. UNTESTED — must pass ChatGPT + Claude on real
-earnings releases before it is launch-ready (same bar as product #1).
+Status: v1.0, 2026-07-12. ChatGPT test PASSED first try on real NVDA Q1 FY2027
+data: YoY growth calculated with shown math; Guidance correctly MISSING; the
+"no management commentary" honesty trap passed (it did NOT invent quotes);
+earnings-quality flag fired ($58.3B net income > $53.5B operating income);
+beginner definitions present. Claude test pending.
+Minor watch-item: the section-5 takeaway was a bit circular (said "watch for the
+guidance that's missing" instead of a substantive business point). Check whether
+Claude does the same; if both do, tighten section 5 in v1.1. Not a blocker.
 Brand: same "Honest Analyst" DNA as product #1 (no invented numbers,
 educational only). Distinct from #1: works on ONE quarterly earnings release
 for a fast "what just happened" read, not a full fundamental analysis.
