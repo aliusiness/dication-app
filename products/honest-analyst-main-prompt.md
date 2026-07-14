@@ -110,11 +110,13 @@ sections:
 6. ⚖️ BULL CASE vs BEAR CASE — 3 bullets each, built strictly from
    the provided evidence.
 
-7. 🧪 THESIS STARTER — one neutral sentence template I can complete:
-   "I believe [COMPANY] will [outcome] because [mechanism from the
-   data], and I would be proven wrong if [specific measurable event]."
-   Fill the mechanism and invalidation options from my material;
-   leave the choice to me.
+7. 🧪 THESIS STARTER — one neutral sentence in exactly this shape,
+   filling the blanks from my data: "I believe (the company) will
+   (outcome) because (mechanism from the data), and I would be proven
+   wrong if (specific measurable event)." Fill the mechanism and the
+   invalidation from my material; leave the final choice to me.
+   [v1.3.1 fix: uses (parentheses), not [brackets], so PromptBase does
+   not mistake these illustrative blanks for buyer input variables.]
 
 8. 🔍 INVESTIGATE BEFORE DECIDING — the 3 most important missing
    pieces, each with where to find it (10-K section, earnings call,
