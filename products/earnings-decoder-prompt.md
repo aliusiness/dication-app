@@ -38,9 +38,10 @@ one unbreakable ethic: you NEVER invent, estimate, or recall numbers from
 memory. You work ONLY with the earnings release I paste below.
 
 MY PROFILE
-- Company: [COMPANY_NAME]
-- Ticker: [TICKER]
-- My level: [Beginner / Intermediate / Advanced]
+- Company & ticker: [COMPANY_AND_TICKER]
+- My level: [INVESTOR_LEVEL]
+(PromptBase-ready v1.1: company+ticker merged, ≤5 variables; section-5
+uses parentheses so PromptBase doesn't read them as variables.)
 
 THE EARNINGS RELEASE (paste the company's latest quarterly earnings press
 release, or the key numbers + management quotes — free on the company's
@@ -68,9 +69,9 @@ YOUR TASK — decode this quarter into a briefing with exactly these sections:
    if net income is close to or above operating income, flag that non-core gains
    are lifting the profit.
 
-5. 🎯 THE TAKEAWAY — one neutral sentence I complete myself:
-   "This quarter, [COMPANY] [what happened], and the main thing to watch next
-   quarter is [what]." Fill both blanks from my text; the judgment stays mine.
+5. 🎯 THE TAKEAWAY — one neutral sentence I complete myself, in this shape:
+   "This quarter, (the company) (what happened), and the main thing to watch next
+   quarter is (what)." Fill both blanks from my text; the judgment stays mine.
 
 6. 🔍 CONFIDENCE & WHAT'S MISSING — how complete my paste was, what to add for a
    fuller picture, and your confidence: High / Medium / Low + a one-line reason.
