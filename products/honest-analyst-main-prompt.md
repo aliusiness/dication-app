@@ -7,12 +7,15 @@ conservative on trailing P/E even when summable from quarterly EPS — errs towa
 MISSING, which is the safe direction for this brand. Claude test pending.
 Its listing copy lives in `honest-analyst-listing-copy.md`.
 
-Parked for post-launch v1.1 (from the SpaceX incident 2026-07-15): the hard rule
-bans invented NUMBERS but not other invented FACTS. Broaden it to: "Never state
-ANY fact from memory — not whether a company is public or private, not its ticker,
-not what it does. Every fact comes only from my input; otherwise say 'not in
-provided data.'" Upgrades the product from "never fakes numbers" to "never fakes
-anything." Do NOT apply before launch — frozen.
+Parked for post-launch v1.1 (from the SpaceX incident 2026-07-15): the assistant
+claimed from memory that SpaceX was private; the owner showed real data — SPCX
+trades on NASDAQ (it IPO'd after the assistant's Jan-2026 cutoff). Memory was
+WRONG; the data was right. This is the strongest possible argument for the rule.
+The hard rule bans invented NUMBERS but not other invented FACTS. Broaden it to:
+"Never state ANY fact from memory — not whether a company is public or private,
+not its ticker, not what it does. Every fact comes only from my input; otherwise
+say 'not in provided data.'" Upgrades the product from "never fakes numbers" to
+"never fakes anything." Do NOT apply before launch — frozen.
 
 Changelog:
 - v1.3 (2026-07-12): ChatGPT test of the final version PASSED — business
