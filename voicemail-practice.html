@@ -1,0 +1,389 @@
+<title>Voicemail Script — Howard Air</title>
+<style>
+  :root {
+    --bg: #EDE9E1;
+    --surface: #F7F4EE;
+    --ink: #23262E;
+    --ink-soft: #5B5A54;
+    --accent: #C4622D;
+    --accent-soft: #E4C9B4;
+    --teal: #3E5A63;
+    --line: #DAD4C6;
+    --shadow: 0 1px 2px rgba(35,38,46,0.06), 0 6px 20px rgba(35,38,46,0.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #191C22;
+      --surface: #22262E;
+      --ink: #ECE9E2;
+      --ink-soft: #A6A296;
+      --accent: #E08248;
+      --accent-soft: #4A3428;
+      --teal: #8FB0B8;
+      --line: #343943;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #191C22;
+    --surface: #22262E;
+    --ink: #ECE9E2;
+    --ink-soft: #A6A296;
+    --accent: #E08248;
+    --accent-soft: #4A3428;
+    --teal: #8FB0B8;
+    --line: #343943;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  :root[data-theme="light"] {
+    --bg: #EDE9E1;
+    --surface: #F7F4EE;
+    --ink: #23262E;
+    --ink-soft: #5B5A54;
+    --accent: #C4622D;
+    --accent-soft: #E4C9B4;
+    --teal: #3E5A63;
+    --line: #DAD4C6;
+    --shadow: 0 1px 2px rgba(35,38,46,0.06), 0 6px 20px rgba(35,38,46,0.06);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    min-height: 100vh;
+    padding: 32px 16px 140px;
+  }
+  .wrap { max-width: 620px; margin: 0 auto; }
+
+  .call-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 22px 24px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .call-icon {
+    width: 46px; height: 46px;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .call-icon svg { width: 22px; height: 22px; stroke: var(--accent); }
+  .call-meta { min-width: 0; }
+  .call-label {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 2px;
+  }
+  .call-name {
+    font-family: Georgia, "Iowan Old Style", serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  h1 {
+    font-family: Georgia, "Iowan Old Style", serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 28px 0 6px;
+    text-wrap: balance;
+  }
+  .sub {
+    color: var(--ink-soft);
+    font-size: 15px;
+    margin: 0 0 28px;
+    line-height: 1.5;
+    max-width: 46ch;
+  }
+
+  .beats { display: flex; flex-direction: column; gap: 12px; }
+
+  .beat {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 18px 18px 18px 20px;
+    box-shadow: var(--shadow);
+    position: relative;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .beat::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 14px; bottom: 14px;
+    width: 3px;
+    border-radius: 3px;
+    background: var(--accent);
+    opacity: 0.55;
+  }
+  .beat-body { flex: 1; min-width: 0; }
+  .beat-label {
+    font-family: Georgia, "Iowan Old Style", serif;
+    font-style: italic;
+    font-size: 12.5px;
+    letter-spacing: 0.03em;
+    color: var(--teal);
+    margin: 0 0 6px;
+  }
+  .beat-text {
+    font-size: 16.5px;
+    line-height: 1.55;
+    margin: 0;
+    text-wrap: pretty;
+  }
+  .beat-text em { color: var(--accent); font-style: normal; font-weight: 600; }
+
+  .beat-play {
+    flex-shrink: 0;
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    border: 1px solid var(--line);
+    background: var(--bg);
+    color: var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.15s ease;
+  }
+  .beat-play:hover { transform: scale(1.06); }
+  .beat-play:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .beat-play svg { width: 15px; height: 15px; fill: currentColor; }
+  .beat.playing { border-color: var(--accent); }
+  .beat.playing .beat-play { background: var(--accent); color: var(--surface); }
+
+  .bar {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    background: var(--surface);
+    border-top: 1px solid var(--line);
+    padding: 14px 16px calc(14px + env(safe-area-inset-bottom));
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+  .bar-inner {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+  .play-all {
+    flex-shrink: 0;
+    width: 52px; height: 52px;
+    border-radius: 50%;
+    border: none;
+    background: var(--accent);
+    color: var(--surface);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+  }
+  .play-all:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+  .play-all svg { width: 20px; height: 20px; fill: currentColor; }
+  .rate-group { flex: 1; min-width: 0; }
+  .rate-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+  }
+  .rate-row span:last-child { font-variant-numeric: tabular-nums; color: var(--ink); font-weight: 600; }
+  input[type="range"] {
+    width: 100%;
+    accent-color: var(--accent);
+    height: 20px;
+  }
+
+  .status {
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    text-align: center;
+    margin: 22px 0 0;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .beat-play { transition: none; }
+  }
+</style>
+
+<div class="wrap">
+  <div class="call-card">
+    <div class="call-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+    </div>
+    <div class="call-meta">
+      <p class="call-label">Outgoing voicemail</p>
+      <p class="call-name">Howard&nbsp;Air &mdash; Phoenix, AZ</p>
+    </div>
+  </div>
+
+  <h1>Voicemail script</h1>
+  <p class="sub">Five beats, Belfort-style. Tap a beat to hear its tonality, or press play below to hear the whole message in order.</p>
+
+  <div class="beats" id="beats">
+    <div class="beat" data-text="Hey, it's Ali. Look, reason for the message today, something crossed my desk this week that I think could be huge for you guys. You got sixty seconds?">
+      <button class="beat-play" aria-label="Play hook">
+        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+      <div class="beat-body">
+        <p class="beat-label">the hook &mdash; confident, easy</p>
+        <p class="beat-text">Hey, it's Ali. Look, reason for the message today &mdash; <em>something crossed my desk this week</em> that I think could be huge for you guys. You got sixty seconds?</p>
+      </div>
+    </div>
+
+    <div class="beat" data-text="Here's the deal. Phoenix H V A C shops are losing thirty to forty percent of summer calls to voicemail. Every one of those is a missed job, three, four thousand dollars, walking straight to your competitor.">
+      <button class="beat-play" aria-label="Play pain">
+        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+      <div class="beat-body">
+        <p class="beat-label">the pain &mdash; slower, weight on the numbers</p>
+        <p class="beat-text">Here's the deal: Phoenix HVAC shops are losing <em>30 to 40%</em> of summer calls to voicemail. Every one of those is a missed job &mdash; <em>three, four thousand dollars</em> &mdash; walking straight to your competitor.</p>
+      </div>
+    </div>
+
+    <div class="beat" data-text="I built an AI receptionist. Answers every call, twenty four seven, books the appointment on the spot. No missed jobs, no lost revenue.">
+      <button class="beat-play" aria-label="Play solution">
+        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+      <div class="beat-body">
+        <p class="beat-label">the solution &mdash; steady, matter-of-fact</p>
+        <p class="beat-text">I built an AI receptionist. Answers every call, <em>24/7</em>, books the appointment on the spot. No missed jobs, no lost revenue.</p>
+      </div>
+    </div>
+
+    <div class="beat" data-text="Look, one thing I'll tell you straight, I don't ask you to judge this on what I say. Judge it on the demo. Two minutes, I show you exactly how it works on your business.">
+      <button class="beat-play" aria-label="Play risk reversal">
+        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+      <div class="beat-body">
+        <p class="beat-label">risk reversal &mdash; sincere, a little quieter</p>
+        <p class="beat-text">Look, one thing I'll tell you straight &mdash; I don't ask you to judge this on what I say. <em>Judge it on the demo.</em> Two minutes, I show you exactly how it works on your business.</p>
+      </div>
+    </div>
+
+    <div class="beat" data-text="So here's what we'll do. I'll set up a quick demo call, get you looking at it live. Sound good? Great. Talk soon.">
+      <button class="beat-play" aria-label="Play close">
+        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+      <div class="beat-body">
+        <p class="beat-label">the close &mdash; warm, assumptive, upbeat</p>
+        <p class="beat-text">So here's what we'll do &mdash; I'll set up a quick demo call, get you looking at it live. <em>Sound good?</em> Great. Talk soon.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="status" id="status">Tap play to hear it read aloud.</p>
+</div>
+
+<div class="bar">
+  <div class="bar-inner">
+    <button class="play-all" id="playAll" aria-label="Play full script">
+      <svg viewBox="0 0 24 24" id="playAllIcon"><path d="M8 5v14l11-7z"/></svg>
+    </button>
+    <div class="rate-group">
+      <div class="rate-row"><span>Speaking rate</span><span id="rateVal">0.95×</span></div>
+      <input type="range" id="rate" min="0.6" max="1.3" step="0.05" value="0.95" />
+    </div>
+  </div>
+</div>
+
+<script>
+  const beats = Array.from(document.querySelectorAll('.beat'));
+  const rateSlider = document.getElementById('rate');
+  const rateVal = document.getElementById('rateVal');
+  const status = document.getElementById('status');
+  const playAllBtn = document.getElementById('playAll');
+  const playAllIcon = document.getElementById('playAllIcon');
+  let queue = [];
+  let queueIndex = 0;
+  let playingAll = false;
+
+  rateSlider.addEventListener('input', () => {
+    rateVal.textContent = parseFloat(rateSlider.value).toFixed(2) + '×';
+  });
+
+  function clearPlaying() {
+    beats.forEach(b => b.classList.remove('playing'));
+  }
+
+  function speak(text, onEnd) {
+    if (!('speechSynthesis' in window)) {
+      status.textContent = 'Voice playback isn’t supported in this browser.';
+      return;
+    }
+    window.speechSynthesis.cancel();
+    const utter = new SpeechSynthesisUtterance(text);
+    utter.rate = parseFloat(rateSlider.value);
+    utter.pitch = 1;
+    utter.onend = () => { if (onEnd) onEnd(); };
+    window.speechSynthesis.speak(utter);
+  }
+
+  beats.forEach(beat => {
+    const btn = beat.querySelector('.beat-play');
+    btn.addEventListener('click', () => {
+      playingAll = false;
+      clearPlaying();
+      beat.classList.add('playing');
+      status.textContent = 'Playing: ' + beat.querySelector('.beat-label').textContent.split('—')[0].trim();
+      speak(beat.dataset.text, () => {
+        beat.classList.remove('playing');
+        status.textContent = 'Tap play to hear it read aloud.';
+      });
+    });
+  });
+
+  playAllBtn.addEventListener('click', () => {
+    if (playingAll) {
+      window.speechSynthesis.cancel();
+      playingAll = false;
+      clearPlaying();
+      playAllIcon.innerHTML = '<path d="M8 5v14l11-7z"/>';
+      status.textContent = 'Stopped.';
+      return;
+    }
+    playingAll = true;
+    queue = beats.slice();
+    queueIndex = 0;
+    playAllIcon.innerHTML = '<path d="M6 5h4v14H6zM14 5h4v14h-4z"/>';
+    playNext();
+  });
+
+  function playNext() {
+    if (!playingAll || queueIndex >= queue.length) {
+      playingAll = false;
+      clearPlaying();
+      playAllIcon.innerHTML = '<path d="M8 5v14l11-7z"/>';
+      status.textContent = 'Done. Tap play to hear it again.';
+      return;
+    }
+    clearPlaying();
+    const beat = queue[queueIndex];
+    beat.classList.add('playing');
+    beat.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    status.textContent = 'Playing full script — beat ' + (queueIndex + 1) + ' of ' + queue.length;
+    speak(beat.dataset.text, () => {
+      queueIndex++;
+      playNext();
+    });
+  }
+</script>
