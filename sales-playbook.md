@@ -49,6 +49,25 @@ Synthflow only AFTER a client says yes (sell first, build after).
   them all, then respond.
 - Order of pitching: Insights -> Methods -> Solution (never jump to the product).
 - Offer tiers later: Bronze / Silver / Gold pricing.
+- Sell the OUTCOME/FEELING, not the product (e.g., "peace of mind," not "an AI
+  that answers calls").
+- Any stat used must be checkable — show the math (e.g., "$3-4k job x 12
+  months = $36-48k/year"). Never state a suspiciously precise invented number.
+- Don't stack two questions in a row across a follow-up sequence — alternate
+  between a question and a statement close.
+- Don't drop a raw/unbranded link in a cold DM — it reads as spam. Offer to
+  send the demo as a statement; save the actual link for after they engage.
+- Personalize each message per company name and vary the wording — don't
+  copy-paste identical text across businesses.
+
+## HOW TO ASK FOR DMs (prompt template for future rounds)
+```
+Write me [N] cold outreach DMs for [company names], for my AI receptionist
+business. Follow the RULES section of sales-playbook.md: sharp/confident tone,
+no soft openers, real checkable numbers with the math shown, no raw links,
+no two questions in a row across a sequence, sell the outcome/feeling first,
+personalized and varied per company.
+```
 
 ## PRICING (first clients)
 - First 1-2 clients cheap ($100-300 setup) for testimonials -> then $1,000+ setup
