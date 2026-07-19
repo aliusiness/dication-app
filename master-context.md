@@ -60,12 +60,15 @@ just the durable facts, rules, and plans.
 - Cash out later via P2P on a licensed UAE exchange → AED to a Mashreq account.
 - Never share my 12-word wallet seed phrase with anyone.
 
-## STATUS (2026-07-17)
+## STATUS (2026-07-19)
 - Sales playbook + outreach messages saved in repo (sales-playbook.md).
 - Interactive HVAC demo built (no signup): the artifact link in sales-playbook.md.
-- DMed 3 businesses: parker_and_sons, howard_air, azperfectcomfort. More queued.
-- MacBook Pro M5 arrives ~July 19 → then build the real Synthflow demo, start
-  learning to build automations properly. Currently working on an iPad Air M1.
+- parker_and_sons, howard_air, azperfectcomfort: opener sent 7/17, then the
+  $36k-48k follow-up sent 7/19. No replies yet. 6 more companies queued,
+  not yet DMed.
+- MacBook Pro M5 arrived. Synthflow turned out to require an enterprise sales
+  form for real access (no self-serve signup) — switching to ElevenLabs
+  Conversational AI instead (confirmed self-serve, pay-as-you-go).
 - Waiting on DM replies. Rule: reply within 1 minute; follow up up to 7 times.
 
 ## PARKED (do NOT start before the current business earns)

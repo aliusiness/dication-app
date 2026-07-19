@@ -73,9 +73,15 @@ personalized and varied per company.
 - First 1-2 clients cheap ($100-300 setup) for testimonials -> then $1,000+ setup
   + $200-500/month retainer.
 
-## STATUS (2026-07-17)
-- DMed: parker_and_sons, howard_air, azperfectcomfort.
-- More to DM: REEIS, Alaskan AC, Hughes Air (Mesa), Bel-Aire Mechanical,
-  Goettl, Chas Roberts.
-- Mac arrives ~July 19 -> then build real Synthflow demo + start Phase 2.
+## STATUS (2026-07-19)
+- parker_and_sons, howard_air, azperfectcomfort: sent opener (7/17), then sent
+  the $36k-48k "one more note" message (7/19) — skipped the middle Hook Pitch
+  follow-up, went straight to the last one. No replies yet.
+- If still no reply, the unused Hook Pitch follow-up (in OUTREACH MESSAGES
+  above) is still available to send as a next touch.
+- Not yet DMed: REEIS, Alaskan AC, Hughes Air (Mesa), Bel-Aire Mechanical,
+  Goettl, Chas Roberts. Opener drafted, ready to send when Ali decides.
+- Mac arrived ~July 19 -> Synthflow's public site turned out to gate real
+  usage behind an enterprise sales form (no self-serve signup found) ->
+  considering ElevenLabs Conversational AI instead (confirmed self-serve).
 - Waiting on replies. Keep Instagram notifications ON.
