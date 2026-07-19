@@ -64,6 +64,10 @@ just the durable facts, rules, and plans.
 - Old idea: selling finance prompts on PromptBase ("The Honest Analyst"). Built and
   tested, but I moved on — payment + fit were wrong. Files still in repo.
 - A "Contract/Legal Document Summarizer" prompt idea, and a two-layer critic agent.
+- Composio (a coding-style AI tool-integration platform): looked into it
+  2026-07-19, decided NOT needed — doesn't fit the no-code stack (Make.com +
+  Synthflow) and had no clear link to the HVAC build. Don't revisit unless a
+  real coding-based use case shows up.
 
 ## MONEY EXPECTATION
 - First 90 days: a few hundred dollars at most, if I grind the sales. The real
