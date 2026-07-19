@@ -33,6 +33,8 @@ just the durable facts, rules, and plans.
   version that still gets the best real result — not a soft/cautious one.
   Fixed daily deadlines, push hard. (You may still flag a real risk ONCE,
   briefly, per the rule above — that doesn't change.)
+- Any time you give me a prompt meant to be pasted somewhere else (NotebookLM,
+  ChatGPT, etc.), put it in a code block, not a quote.
 
 ## MY BUSINESS (current: AI Automation Agency)
 - I sell AI automation to businesses — systems where AI does their repetitive work
