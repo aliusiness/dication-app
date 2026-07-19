@@ -68,3 +68,12 @@ just the durable facts, rules, and plans.
 ## MONEY EXPECTATION
 - First 90 days: a few hundred dollars at most, if I grind the sales. The real
   prize is skills + proof I can finish, not the money yet.
+
+## GROWTH TRIGGER — when to add new tools (2026-07-19)
+- Do NOT add Zapier, n8n, Slack, or HubSpot yet. Current stack (Make.com +
+  Synthflow) is enough until the business actually outgrows it.
+- Trigger to revisit: 3+ paying clients AND Make.com itself is the bottleneck
+  (too many scenarios, hitting plan limits, or losing track of leads in
+  notes/spreadsheets instead of a real CRM).
+- Until that trigger hits, if a fresh chat or I bring up these tools, point
+  back to this rule instead of exploring them.
