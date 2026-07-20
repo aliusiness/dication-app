@@ -81,6 +81,11 @@ personalized and varied per company.
   above) is still available to send as a next touch.
 - Not yet DMed: REEIS, Alaskan AC, Hughes Air (Mesa), Bel-Aire Mechanical,
   Goettl, Chas Roberts. Opener drafted, ready to send when Ali decides.
+- New leads found (2026-07-19, real companies, verified small/family-owned):
+  Way Cool Plumbing & Air (Instagram: @callwaycool, 637 followers, confirmed
+  real account), Arizona Family Air, Arizona Comfort Specialists, Cooper
+  Climate Control. Only Way Cool's Instagram handle was confirmed by search —
+  find the other 3 by searching their names directly in the Instagram app.
 - Mac arrived ~July 19 -> Synthflow's public site turned out to gate real
   usage behind an enterprise sales form (no self-serve signup found) ->
   considering ElevenLabs Conversational AI instead (confirmed self-serve).
