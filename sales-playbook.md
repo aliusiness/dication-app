@@ -81,11 +81,25 @@ personalized and varied per company.
   above) is still available to send as a next touch.
 - Not yet DMed: REEIS, Alaskan AC, Hughes Air (Mesa), Bel-Aire Mechanical,
   Goettl, Chas Roberts. Opener drafted, ready to send when Ali decides.
-- New leads found (2026-07-19, real companies, verified small/family-owned):
-  Way Cool Plumbing & Air (Instagram: @callwaycool, 637 followers, confirmed
-  real account), Arizona Family Air, Arizona Comfort Specialists, Cooper
-  Climate Control. Only Way Cool's Instagram handle was confirmed by search —
-  find the other 3 by searching their names directly in the Instagram app.
+- Lead research + qualification run (2026-07-19). Verdict below.
+  - NEXT TARGET (strong fit, score 8/10): Arizona EZ AC, Chandler.
+    Phone (480) 660-6604, azezac.com, 5.0★ / ~24 reviews. Owners Adam & Rob
+    (2-man shop = can't answer every call while on a roof). Hook to send:
+    "Hey Adam — with just you and Rob running the calls, every ring that comes
+    while you're up on a roof in Chandler is a booked job somebody else grabs.
+    One missed AC call in this heat is $3-4k gone. Mind if I show you how a
+    couple shops here stopped losing them?"
+  - Maybe (score 6, low conf): Arizona Comfort Specialists, Phoenix,
+    (602) 902-1698 — BUT a review says "answered when no one else did," which
+    undercuts the missed-call pitch. Lower priority.
+  - Dropped as too big/established (don't fit missed-call angle): Way Cool
+    Plumbing & Air (700+ reviews), Cooper Climate Control (since 1993, 374
+    reviews), Ellsworth Home Services (383 reviews).
+  - Arizona Family Air: could NOT verify — web search confuses it with an
+    unrelated Tucson company. Check manually in Instagram before using.
+  - LESSON: web search mostly surfaces HVAC shops that are already too big
+    (call centers). Best-fit tiny 2-3 person shops live inside the Instagram
+    app (search #phoenixhvac, location tags) — do lead-finding THERE.
 - Mac arrived ~July 19 -> Synthflow's public site turned out to gate real
   usage behind an enterprise sales form (no self-serve signup found) ->
   considering ElevenLabs Conversational AI instead (confirmed self-serve).
