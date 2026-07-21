@@ -75,6 +75,8 @@ just the durable facts, rules, and plans.
 - Old idea: selling finance prompts on PromptBase ("The Honest Analyst"). Built and
   tested, but I moved on — payment + fit were wrong. Files still in repo.
 - A "Contract/Legal Document Summarizer" prompt idea, and a two-layer critic agent.
+- Own business website (not started yet). Design inspiration noted: liked the
+  look of telnyx.com — reference it when we get to building our own site.
 - Composio (a coding-style AI tool-integration platform): looked into it
   2026-07-19, decided NOT needed — doesn't fit the no-code stack (Make.com +
   Synthflow) and had no clear link to the HVAC build. Don't revisit unless a
