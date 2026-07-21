@@ -4,20 +4,36 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This repository hosts **Prompt Scout** — Ali's first AI agent project.
+**Current business (active, as of 2026-07-19): an AI automation agency.** Ali sells
+AI receptionist systems to HVAC (heating/cooling) companies in Phoenix, Arizona —
+answers calls/DMs/emails 24/7 so they stop losing jobs to voicemail. Full details,
+rules, and status live in `master-context.md` and `sales-playbook.md` — read those
+first in any session. Agent prompts and the live ElevenLabs receptionist config are
+in `hvac-agents.md`.
 
-The agent's job: research prompt marketplaces (starting with PromptBase) and produce organized, factual reports that help Ali build his prompt-selling business.
+**This chat/repo is for business work only.** If Ali drifts into unrelated tasks
+(installing unrelated browser extensions, personal app setup, anything not tied to
+the HVAC business), name it as a distraction, don't execute the off-topic task here,
+and tell him to open a separate chat for it instead.
 
-**Important history:** this repo was originally created for a mobile app idea (`dication-app`) that was dropped before any code was written. Earlier notes about a dictation app are obsolete. The owner may rename the repo on GitHub to match the agent project.
+**Former direction (parked, not active): Prompt Scout**, an agent for researching
+prompt marketplaces (PromptBase) to help sell finance prompts. Ali moved on from
+this — payment and niche fit were wrong. Files remain in `reports/` and
+`agent/scout.md` for reference only; do not resume this work unless Ali explicitly
+asks to revisit it.
 
-**Hard boundary (from the owner's own rules):** the agent gathers and organizes market data only. It must NEVER decide what Ali should sell, pick his niche, or make business recommendations. Ali reads the reports, does the analysis, and makes every business decision himself. The agent is a scout, not a general.
-
-**Current phase: LAUNCH — research is closed.** The master file (`reports/2026-07-11-promptbase-master-file.md`) is the single source of truth and supersedes the earlier baseline and platform-rules reports. Niche: finance prompts under "The Honest Analyst" standard. The only open task is the launch sequence in the master file's section 11. The next new data collected is sales data — new research rounds wait until after launch. If a session starts drifting toward more preparation instead of the launch steps, gently point Ali back to section 11 of the master file.
+**Older history:** this repo was originally created for a mobile app idea
+(`dication-app`) that was dropped before any code was written. Those notes are
+obsolete.
 
 ## Repository Structure
 
-- `agent/scout.md` — the Prompt Scout's instructions: its job, boundaries, and report format. On standby until after launch; its next use is post-launch category monitoring and sales-data rounds.
-- `reports/` — dated research reports (`YYYY-MM-DD-<category>.md`). The master file is the current single source of truth.
+- `master-context.md` — Ali's portable personal + business context (paste into any
+  new chat). Read this first.
+- `sales-playbook.md` — outreach messages, rules, lead research, live DM status.
+- `hvac-agents.md` — reusable agent prompts (lead research, qualification, demo
+  builder, red-team) plus the live ElevenLabs Arizona EZ AC receptionist config.
+- `agent/scout.md`, `reports/` — parked Prompt Scout materials, reference only.
 
 ## About the Owner
 
@@ -34,6 +50,9 @@ If his brother Chris is using the account, ask first and do not apply Ali's pers
 - When a task involves a business decision or market judgment, say plainly "this is a business decision" and ask whether Ali wants to make it himself or hand it to you. Default: Ali decides. Make the call yourself only when he explicitly gives you that specific decision.
 - Name Ali's patterns out loud when they appear: starting new projects before finishing, or dressing up escape as "new passion" or "wrong niche."
 - Review your work before delivering it.
+- This chat is for the HVAC business only (rule added 2026-07-19, by Ali). If a
+  request is unrelated (e.g. general app/tool setup with no business tie), say so
+  plainly, don't do the task here, and tell Ali to open a new chat for it.
 
 ## Teach While Building
 
